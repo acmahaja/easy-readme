@@ -2,12 +2,3 @@
     height: 100%;
     width: 100%;
 }
-
-.Sections {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: calc(100% - (5em + 2px));
-    width: calc(100%);
-}
