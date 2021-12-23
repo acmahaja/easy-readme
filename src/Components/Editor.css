@@ -1,0 +1,11 @@
+.Editor {
+    width: calc(48.5%);
+    height: calc(93%);
+    border: 2px solid #D0D7DE;
+    border-radius: 8px;
+}
+
+.LineNumber {
+    display: flex;
+    flex-direction: column;
+}

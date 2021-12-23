@@ -26,22 +26,22 @@ class NodeHeaderParser {
 
 }
 
-console.log(NodeHeaderParser.check("# This is a h1\n"));
-console.log(NodeHeaderParser.check("## This is a h2\n"));
-console.log(NodeHeaderParser.check("### This is a h3\n"));
-console.log(NodeHeaderParser.check("#### This is a h4\n"));
-console.log(NodeHeaderParser.check("##### This is a h5\n"));
-console.log(NodeHeaderParser.check("###### This is a h6\n"));
+// console.log(NodeHeaderParser.check("# This is a h1\n"));
+// console.log(NodeHeaderParser.check("## This is a h2\n"));
+// console.log(NodeHeaderParser.check("### This is a h3\n"));
+// console.log(NodeHeaderParser.check("#### This is a h4\n"));
+// console.log(NodeHeaderParser.check("##### This is a h5\n"));
+// console.log(NodeHeaderParser.check("###### This is a h6\n"));
 
-console.log(NodeHeaderParser.check("This is a h1\n==="));
-console.log(NodeHeaderParser.check("This is a h2\n==="));
+// console.log(NodeHeaderParser.check("This is a h1\n==="));
+// console.log(NodeHeaderParser.check("This is a h2\n==="));
 
 
-console.log(NodeHeaderParser.generate("# This is a h1\n"));
-console.log(NodeHeaderParser.generate("## This is a h2\n"));
-console.log(NodeHeaderParser.generate("### This is a h3\n"));
-console.log(NodeHeaderParser.generate("#### This is a h4\n"));
-console.log(NodeHeaderParser.generate("##### This is a h5\n"));
-console.log(NodeHeaderParser.generate("###### This is a h6\n"));
-console.log(NodeHeaderParser.generate("This is a h1\n==="));
-console.log(NodeHeaderParser.generate("This is a h2\n-----"));
+// console.log(NodeHeaderParser.generate("# This is a h1\n"));
+// console.log(NodeHeaderParser.generate("## This is a h2\n"));
+// console.log(NodeHeaderParser.generate("### This is a h3\n"));
+// console.log(NodeHeaderParser.generate("#### This is a h4\n"));
+// console.log(NodeHeaderParser.generate("##### This is a h5\n"));
+// console.log(NodeHeaderParser.generate("###### This is a h6\n"));
+// console.log(NodeHeaderParser.generate("This is a h1\n==="));
+// console.log(NodeHeaderParser.generate("This is a h2\n-----"));
