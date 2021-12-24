@@ -1,40 +1,42 @@
-import React, { Component } from 'react';
-import './Editor.css'
+import React, { Component } from "react";
+import "./Editor.css";
+import CodeMirror from "@uiw/react-codemirror";
 
-class Editor extends Component{
-  render(){
-    return(
+class Editor extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentEditor: 'CodeMirror'
+    }
+    this.saveState = this.saveState.bind(this);
+  }
+
+  saveState(evt) {
+    this.props.updateCode(evt.target.value);
+  }
+
+  render() {
+    return (
+
       <div className="Editor">
-        <div className="Options">
-          <div className="option-text-editor">
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
-              <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path>
-          </svg>
-          Text Editor
-
-          </div>
-          <div className="option-drag-drop">
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-code">
-              <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path>
-          </svg>
-          Drag and Drop
-
-          </div>
-        </div>
-        <div className="LineNumber">
-        1
-        2
-        3
-        4
-        5
-        </div>
-        <div className="Text">
-          This is a test
-        </div>
+        <CodeMirror
+          value="console.log('hello world!');"
+          height="100%"
+          swidth="100"
+          // maxWidth="35.5em"
+          className="CodeMirror"
+          option
+        />
       </div>
-    )
+    );
   }
 }
 
+{
+  /* <div className="LineNumber">
+
+</div>
+<textarea name="userCode" id="userCode" onChange={this.saveState}></textarea> */
+}
 
 export default Editor;

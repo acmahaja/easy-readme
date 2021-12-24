@@ -6,15 +6,26 @@ import Preview from './Components/Preview';
 class App extends Component{
   constructor(props){
     super(props)
+    this.state = {
+      userCode: "<h1>This is a heading 1<h1>"
+    }
+    this.updateCode = this.updateCode.bind(this);
   }
+
+  updateCode(newCode){
+    this.setState({
+      userCode: newCode
+    })
+  }
+
   render(){
     return(
       <div className="App">
-              <Navbar />
+        <Navbar />
         
         <div className="Sections">
-          <Editor />
-          <Preview />
+          <Editor code = {this.state.userCode} updateCode={this.updateCode}/>
+          <Preview code = {this.state.userCode} />
 
         </div>
       </div>

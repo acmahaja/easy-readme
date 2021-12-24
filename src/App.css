@@ -11,3 +11,26 @@
     height: calc(100% - (3em + 2px));
     width: calc(100%);
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: none;
+    max-height: 200px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.0);
+    border-radius: 10px;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #A6A6A6;
+    border-radius: 8px;
+    width: 15px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: rgba(0, 0, 0, 0.0);
+}
