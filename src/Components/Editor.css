@@ -6,11 +6,35 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+}
+
+.editorButton {
+    display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    height: 100%;
+    min-width: 10em;
+    width: fit-content;
+    background-color: #f6f8fa;
+}
+
+.isActive {
+    background-color: white;
+    border: none;
+}
+
+.EditorHeader {
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: #d0d7de 2px solid;
 }
 
 .CodeMirror {
-    width: 100%;
+    width: 99%;
     height: 99%;
     font-size: 14px;
     overflow: overlay;
